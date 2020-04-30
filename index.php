@@ -6,6 +6,8 @@
     <title>テストサイト</title>
 </head>
 <body>
+<header></header>
+<footer></footer>
     
 </body>
 </html>
