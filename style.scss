@@ -1,0 +1,46 @@
+/*
+Theme Name: wordpress_practice1
+Theme URI:h ttps://github.com/hiroakiito/wordpress_practice/blob/master/index.php
+Author: hiroaki-itou
+Author URI: https://github.com/hiroakiito/wordpress_practice/blob/master/index.php
+Description: wordpress練習用テーマ開発
+Version: 1.0
+*/
+@charset "UTF-8";
+
+// 色設定
+$black: #000;
+$pc-head: 28px;
+$sp-head: 22px;
+
+
+// レスポンシブ
+$sp: 'max-width: 768px';
+// コンテンツの最大幅
+$max-width: 1000px;
+
+$breakpoints: (
+  'sm': 'screen and (max-width: 414px)',
+  'md': 'screen and (max-width: 768px)',
+  'lg': 'screen and (max-width: 1000px)',
+  'xl': 'screen and (max-width: 1200px)',
+) !default;
+
+@mixin mq($breakpoint: sm) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+    }
+}
+// ------------------------------
+// IMORT
+// ------------------------------
+
+// リセットCSS
+@import "reset";
+// MIXIN
+@import "mixin";
+
+@import "basic";
+
+// 実際にコードを書いていくところ
+@import "contents";
