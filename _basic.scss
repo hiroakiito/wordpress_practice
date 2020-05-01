@@ -1,10 +1,17 @@
 // 横幅管理 wrapper
 .container {
   margin: 0 auto;
-  padding: 0 10px;
   width: 100%;
   max-width: $max-width;
   @include mq() {
     padding: 0 20px;
   }
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+i {
+  color: #000000;
 }

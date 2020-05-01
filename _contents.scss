@@ -2,6 +2,171 @@ body {
   font-family: 'Noto Serif JP', sans-serif;
 }
 
-h1 {
-  color: red;
+// ヘッダー
+.header {
+  border-top: 3px solid #231B8F;
+  padding: 20px 0 20px 0;
+  .container {
+    @include flex();
+  }
+  .head-left {
+    width: 50%;
+    @include flex(flex-start);
+    a {
+      color: #000;
+      font-size: 22px;
+    }
+    p {
+      margin-top: 5px;
+      margin-left: 40px;
+      text-align: left;
+      font-size: 12px;
+      color: #383838;
+    }
+    .head-right {
+      width: 50%;
+    }
+  }
+}
+
+// ナビゲーションメニュー
+.nav-menu {
+  border-top: 1px #efefef solid;
+  border-bottom: 1px #efefef solid;
+  ul {
+    @include flex();
+    li {
+      padding: 20px 0 20px 0;
+      text-align: center;
+      flex: 1;
+      border-right: 1px #efefef solid;
+      a {
+        display: block;
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+      }
+      &:last-child, &:first-child {
+        flex: 1;
+        border-right: 1px #efefef solid;
+        border-left: 1px #efefef solid;
+      }
+    }
+  }
+}
+
+//メインコンテンツ
+.main-container {
+  background: #F8F8F8;
+  padding-bottom: 100px;
+  ul {
+    padding: 15px 0 15px 0;
+    @include flex(flex-start);
+    li {
+      margin-left: 15px;
+      font-size: 12px;
+    }
+  }
+  .content {
+    @include flex();
+    main {
+      width: 70%;
+      height: 500px;
+      background-color: #fff;
+    }
+  }
+}
+
+// サイドバー
+aside {
+  width: 25%;
+  .sns-container {
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+
+  p {
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border-bottom: 3px solid #231B8F;
+  }
+  ul {
+    @include flex();
+    li {
+      font-size: 12px;
+      width: 100%;
+      border: 1px #efefef solid;
+      padding: 10px 5px;
+      margin-bottom: 10px;
+      i {margin-right: 20px;}
+      .fa-facebook-square {
+        color: #3b5998;
+      }
+      .fa-twitter {
+        color: #00aced;
+      }
+      .fa-rss-square {
+        color: #87bd33;
+      }
+    }
+  }
+  .ranking-container {
+    background-color: #fff;
+    ul {
+      li {
+          position: relative;
+          counter-increment: flow;
+          padding-left: 60px;
+          margin: 0;
+          border-left: none;
+          border-right: none;
+          border-bottom: none;
+          &:before {
+            content: counters(flow,".") " ";
+            position: absolute;
+            left: 10px;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            border: 1px solid #231B8F;
+          }
+      }
+    }
+  } 
+}
+
+.blog-link {
+  font-weight: bold;
+  padding: 30px;
+  text-align: center;
+  color: #000;
+  font-size: 22px;
+}
+.footer-menu {
+  padding: 20px;
+  background: #F8F8F8;
+  ul {
+    @include flex();
+  }
+}
+
+// フッター
+.footer {
+  color: #ffffff;
+  background-color: #231B8F;
+  padding: 20px 0 20px 0;
+  .container {
+    @include flex();
+  }
+  .foot-left {
+    width: 50%;
+    @include flex(flex-start);
+    a {
+      color: #ffffff;
+      font-size: 12px;
+      margin-right: 20px;
+    }
+    .foot-right {
+      width: 50%;
+    }
+  }
 }
