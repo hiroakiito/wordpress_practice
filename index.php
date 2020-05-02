@@ -61,8 +61,8 @@
 <div class="main-container">
     <div class="container">
         <ul>
-            <li><a href=""><i class="fa fa-home"></i>  HOME</a></li>/
-            <li><a href=""><i class="fa fa-folder"></i>  ビジネス英語を書く</a></li>/
+            <li><a href=""><i class="fa fa-home"></i>  HOME</a>  /</li>
+            <li><a href=""><i class="fa fa-folder"></i>  ビジネス英語を書く</a>  /</li>
             <li><a href=""><i class="far fa-file"></i>  センスがグッとアップする。そのまま使える英語メール書き出し80選</a></li>
         </ul>
     </div>

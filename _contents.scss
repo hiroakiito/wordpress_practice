@@ -1,5 +1,5 @@
 body {
-  font-family: 'Noto Serif JP', sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", 游ゴシック, YuGothic, Verdana, メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 // ヘッダー
@@ -40,6 +40,9 @@ body {
       text-align: center;
       flex: 1;
       border-right: 1px #efefef solid;
+      span {
+        font-size: 12px;
+      }
       a {
         display: block;
         font-weight: bold;
@@ -70,6 +73,7 @@ body {
   .content {
     @include flex();
     main {
+      border: 1px #efefef solid;
       width: 70%;
       height: 500px;
       background-color: #fff;
@@ -123,10 +127,13 @@ aside {
           border-bottom: none;
           &:before {
             content: counters(flow,".") " ";
+            text-align: center;
             position: absolute;
             left: 10px;
+            line-height: 28px;
             margin-bottom: 10px;
-            padding: 10px 15px;
+            width: 30px;
+            height: 30px;
             border: 1px solid #231B8F;
           }
       }
