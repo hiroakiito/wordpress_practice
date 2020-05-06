@@ -147,10 +147,10 @@
                     </ol>
                     <br>
                     <blockquote>
-                    <h3>ワードプレス</h3>
-                    <br>
-                    <p>WordPress（ワードプレス）は、オープンソースのブログソフトウェアである。PHPで開発されており、データベース管理システムとしてMySQLを利用している（後述のプラグインよりSQLiteでの使用も可能）。単なるブログではなくコンテンツ管理システム (CMS) としてもしばしば利用されている。b2/cafelogというソフトウェアのフォーク（後継）として開発、2003年5月27日に初版がリリースされた[4]。GNU General Public License (GPL) の下で配布されている。</p>
-                    <cite><a href="https://ja.wikipedia.org/wiki/WordPress">出典: フリー百科事典『ウィキペディア（Wikipedia）』</a></cite>
+                        <h3>ワードプレス</h3>
+                        <br>
+                        <p>WordPress（ワードプレス）は、オープンソースのブログソフトウェアである。PHPで開発されており、データベース管理システムとしてMySQLを利用している（後述のプラグインよりSQLiteでの使用も可能）。単なるブログではなくコンテンツ管理システム (CMS) としてもしばしば利用されている。b2/cafelogというソフトウェアのフォーク（後継）として開発、2003年5月27日に初版がリリースされた[4]。GNU General Public License (GPL) の下で配布されている。</p>
+                        <cite><a href="https://ja.wikipedia.org/wiki/WordPress">出典: フリー百科事典『ウィキペディア（Wikipedia）』</a></cite>
                     </blockquote>
             </div><!-- 記事本文 -->
 
