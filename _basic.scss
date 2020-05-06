@@ -4,7 +4,7 @@
   width: 100%;
   max-width: $max-width;
   @include mq() {
-    padding: 0 20px;
+    padding: 0 10px;
   }
 }
 
@@ -22,4 +22,22 @@ a {
 }
 i {
   color: #000000;
+}
+
+.sp-visible {
+  display: none;
+}
+.pc-visible {
+  display: block;
+}
+@media($sp) {
+  .item {
+    width: 100%;
+  }
+  .sp-visible {
+    display: block;
+  }
+  .pc-visible {
+    display: none;
+  }
 }
